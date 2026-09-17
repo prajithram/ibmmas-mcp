@@ -1,0 +1,21 @@
+{
+  "name": "mas-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for IBM Maximo Application Suite (MAS) — connects Claude to live work order data",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "mas-mcp-server": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
